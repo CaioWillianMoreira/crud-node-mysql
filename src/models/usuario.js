@@ -1,5 +1,5 @@
-const Sequelize = requrie('sequelize')
-const sequelize = require('../database/database')
+const Sequelize = require('sequelize')
+const sequelize = require('../database/database.js')
 
 const Usuario = sequelize.define("usuario", {
   id: {
@@ -12,14 +12,14 @@ const Usuario = sequelize.define("usuario", {
     allowNull: false,
     type: Sequelize.STRING(100),
     validate: {
-      len: [3,100]
+      len: [3, 100]
     }
   },
   salario: {
     allowNull: false,
-    type: Sequelize.DOUBLE,
+    type: Sequelize.DOUBLE(),
     validate: {
-      len: [1,99999]
+      len: [1, 999999]
     }
   },
   dataNascimento: {
@@ -28,7 +28,7 @@ const Usuario = sequelize.define("usuario", {
   },
   ativo: {
     allowNull: false,
-    type: Sequelize.BOOLEAN,
+    type: Sequelize.BOOLEAN(),
     defaultValue: true
   }
 })

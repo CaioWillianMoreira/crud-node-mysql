@@ -1,4 +1,3 @@
-// string de conexão
 module.exports = {
   development: {
     database: {
@@ -7,13 +6,13 @@ module.exports = {
       name: 'cursoNodeMySQL',
       dialect: 'mysql',
       user: 'root',
-      password: ''
+      password: 'password'
     }
   },
-  production: {
+  production:{
     database: {
       host: process.env.DB_HOST,
-      port: process.env.DB_PORT
+      host: process.env.DB_PORT
     }
   }
 }

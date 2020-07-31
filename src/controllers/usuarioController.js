@@ -1,5 +1,5 @@
 const Usuario = require('../models/usuario')
-const status = requrie('http-status')
+const status = require('http-status')
 
 exports.Insert = (req, res, next) => {
   const nome = req.body.nome
