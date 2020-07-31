@@ -1,8 +1,8 @@
 # CRUD MySql e Node
 
-### Dependências 
+## Dependências 
 
-## express = 4.17.1
-## http-status = 1.3.2
-## mysql2 = 1.7.0
-## sequelize = 5.18.4
+- express: __4.17.1__
+- http-status: __1.3.2__
+- mysql2: __1.7.0__
+- sequelize: __5.18.4__
